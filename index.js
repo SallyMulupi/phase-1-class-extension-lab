@@ -32,3 +32,8 @@ class Square extends Polygon {
     constructor(sides) {
         super(sides);
     }
+    get isvalid() {
+        if (this.sides[0] === this.sides[1] && this.sides[1] === this.sides[2] && this.sides[2] === this.sides[3] && this.sides[3] === this.sides[0]) {
+            return true;
+        }
+    }
