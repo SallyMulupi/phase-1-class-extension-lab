@@ -21,3 +21,10 @@ class Triangle extends Polygon {
             return true;
         }
     }
+    get area() {
+        if (this.isvalid) {
+            let s = this.perimeter / 2;
+            return Math.sqrt(s * (s - this.sides[0]) * (s - this.sides[1]) * (s - this.sides[2]));
+        }
+    }
+}
