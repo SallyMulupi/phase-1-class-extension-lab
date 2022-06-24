@@ -12,3 +12,12 @@ get perimeter() {
     }
     return sum;
 }
+class Triangle extends Polygon {
+    constructor(sides) {
+        super(sides);
+    }
+    get isvalid() {
+        if (this.countSides == 3) {
+            return true;
+        }
+    }
