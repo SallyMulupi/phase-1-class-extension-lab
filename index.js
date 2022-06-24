@@ -1,7 +1,7 @@
 // Your code hereclass Polygon {
-constructor(sides) {
+constructor(sides); {
     this.sides = sides;
 }
-get countSides() {
+get = countSides(); {
     return this.sides.length;
 }
